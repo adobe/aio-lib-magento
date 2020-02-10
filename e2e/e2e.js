@@ -16,9 +16,9 @@ const path = require('path')
 require('dotenv').config({ path: path.join(__dirname, '.env') })
 
 let sdkClient = {}
-const tenantId = process.env['MagentoCoreAPI_TENANT_ID']
-const apiKey = process.env['MagentoCoreAPI_API_KEY']
-const accessToken = process.env['MagentoCoreAPI_ACCESS_TOKEN']
+const tenantId = process.env.MAGENTO_TENANT_ID
+const apiKey = process.env.MAGENTO_API_KEY
+const accessToken = process.env.MAGENTO_ACCESS_TOKEN
 
 beforeAll(async () => {
   sdkClient = await sdk.init(tenantId, apiKey, accessToken)
