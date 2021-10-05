@@ -12,8 +12,6 @@ governing permissions and limitations under the License.
 const loggerNamespace = '@adobe/aio-lib-magento'
 const logger = require('@adobe/aio-lib-core-logging')(loggerNamespace, { level: process.env.LOG_LEVEL })
 
-/* global Request, Response */ // for linter
-
 /**
  * Reduce an Error to a string
  *
